@@ -18,6 +18,9 @@ endif
 ifeq (nexus_bullhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_bullhead.mk
 endif
+ifeq (nexus_clark,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_clark.mk
+endif
 ifeq (nexus_deb,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_deb.mk
 endif
