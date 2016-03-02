@@ -21,6 +21,10 @@ ifneq ($(filter nexus_bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter nexus_clark,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/nexus/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter nexus_deb,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/1200.zip:system/media/bootanimation.zip
